@@ -102,7 +102,7 @@ PUT /api/students/:id/handle — Update Codeforces handle and sync data
 
 **Project Structure**
 
-
+```
 root/
 ├── backend/
 │ ├── models/ # Mongoose schemas (e.g., Student.js)
@@ -123,6 +123,7 @@ root/
 │
 ├── .gitignore # Files and folders to ignore in Git
 └── README.md # Project documentation
+```
 
 **###How it Works**
 
