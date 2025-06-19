@@ -1,0 +1,46 @@
+/* Default (light mode) */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Button component (DarkModeToggle) */
+.toggle-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  align-self:flex-end;
+}
+
+.toggle-btn:hover {
+  background-color: #666;
+}
+
+/* Table and other UI elements should also adapt if needed */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
