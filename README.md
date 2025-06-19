@@ -40,7 +40,7 @@ git clone https://github.com/yourusername/student-progress-management.git
 cd student-progress-management
 
 **Backend Setup:**
-
+**bash**
 cd backend
 npm install
 
@@ -58,7 +58,7 @@ Start MongoDB server if not already running.
 
 
 
-**Run the backend server:**
+**Run the backend server**
 
 npm start
 The backend server should now run on http://localhost:5000.
@@ -75,6 +75,8 @@ npm start
 The frontend app will open at http://localhost:3000.
 
 **API Endpoints**
+
+
 GET /api/students — Get all students
 
 GET /api/students/:id — Get a student by ID
@@ -88,6 +90,7 @@ DELETE /api/students/:id — Delete student
 PUT /api/students/:id/handle — Update Codeforces handle and sync data
 
 **Project Structure**
+
 
 backend/
   ├── models/          # Mongoose models (Student schema)
