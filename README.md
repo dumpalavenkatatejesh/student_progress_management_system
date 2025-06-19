@@ -33,51 +33,40 @@ This is a MERN stack web application to manage student profiles and track their 
 
 ### Installation
 
-1. Clone the repository:
+**1. Clone the repository:**
 
-```bash
+**bash**
 git clone https://github.com/yourusername/student-progress-management.git
 cd student-progress-management
 
-Backend Setup:
+**Backend Setup:**
 
-bash
-Copy
-Edit
 cd backend
 npm install
-Create a .env file in the backend folder with the following:
 
-env
-Copy
-Edit
+**Create a .env file in the backend folder with the following**
+
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/student-progress-management-system
 EMAIL_USER=your_email@example.com
 EMAIL_PASS=your_email_password
 Start MongoDB server if not already running.
 
-Run the backend server:
 
-bash
-Copy
-Edit
+
+**Run the backend server:**
+
 npm start
 The backend server should now run on http://localhost:5000.
 
-Frontend Setup
+**Frontend Setup**
 Open a new terminal and navigate to the frontend folder:
 
-bash
-Copy
-Edit
 cd ../frontend
 npm install
-Start the React development server:
 
-bash
-Copy
-Edit
+**Start the React development server:**
+
 npm start
 The frontend app will open at http://localhost:3000.
 
@@ -94,10 +83,8 @@ DELETE /api/students/:id — Delete student
 
 PUT /api/students/:id/handle — Update Codeforces handle and sync data
 
-Project Structure
-bash
-Copy
-Edit
+**Project Structure**
+
 backend/
   ├── models/          # Mongoose models (Student schema)
   ├── routes/          # Express route handlers
@@ -121,3 +108,12 @@ Backend API fetches/stores data in MongoDB using Mongoose.
 When a student with a Codeforces handle is added or updated, backend fetches latest rating data from Codeforces API.
 
 Data is displayed in a table with options to view, delete, and download as CSV.
+
+**Troubleshooting**
+Make sure MongoDB is running and accessible.
+
+Check .env file for correct MONGO_URI and port.
+
+If API requests fail, verify backend server is running and CORS is enabled.
+
+Use browser DevTools Network tab to debug frontend API calls.
