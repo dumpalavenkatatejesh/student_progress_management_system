@@ -47,9 +47,13 @@ npm install
 **Create a .env file in the backend folder with the following**
 
 PORT=5000
+
 MONGO_URI=mongodb://localhost:27017/student-progress-management-system
+
 EMAIL_USER=your_email@example.com
+
 EMAIL_PASS=your_email_password
+
 Start MongoDB server if not already running.
 
 
