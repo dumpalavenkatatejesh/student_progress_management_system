@@ -36,12 +36,19 @@ This is a MERN stack web application to manage student profiles and track their 
 **1. Clone the repository:**
 
 **bash**
+
+
+
 git clone https://github.com/yourusername/student-progress-management.git
+
 cd student-progress-management
 
-**Backend Setup:**
+**Backend Setup**
+
 **bash**
+
 cd backend
+
 npm install
 
 **Create a .env file in the backend folder with the following**
@@ -61,17 +68,21 @@ Start MongoDB server if not already running.
 **Run the backend server**
 
 npm start
+
 The backend server should now run on http://localhost:5000.
 
 **Frontend Setup**
+
 Open a new terminal and navigate to the frontend folder:
 
 cd ../frontend
+
 npm install
 
 **Start the React development server:**
 
 npm start
+
 The frontend app will open at http://localhost:3000.
 
 **API Endpoints**
