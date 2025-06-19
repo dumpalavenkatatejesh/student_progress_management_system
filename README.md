@@ -103,22 +103,29 @@ PUT /api/students/:id/handle — Update Codeforces handle and sync data
 **Project Structure**
 
 
-backend/
-  ├── models/          # Mongoose models (Student schema)
-  ├── routes/          # Express route handlers
-  ├── utils/           # Utility functions (e.g., Codeforces API fetcher)
-  ├── cron/            # Scheduled tasks
-  ├── server.js        # Backend entry point
-  └── .env             # Environment variables
-
-frontend/
-  ├── src/
-      ├── components/  # React components (e.g., StudentTable)
-      ├── App.js       # Main React app
-      └── index.js     # React entry point
-  └── package.json
+root/
+├── backend/
+│ ├── models/ # Mongoose schemas (e.g., Student.js)
+│ ├── routes/ # Express route handlers (e.g., studentRoutes.js)
+│ ├── utils/ # Utility functions (e.g., Codeforces API fetcher)
+│ ├── cron/ # Scheduled tasks (e.g., sync jobs)
+│ ├── server.js # Express server entry point
+│ └── .env # Environment variables for backend
+│
+├── frontend/
+│ ├── public/ # Static files (index.html, favicon, etc.)
+│ ├── src/
+│ │ ├── components/ # React components (e.g., StudentTable.js)
+│ │ ├── App.js # Main React app component
+│ │ └── index.js # React entry point
+│ ├── package.json # Frontend dependencies and scripts
+│ └── .env # Environment variables for frontend (optional)
+│
+├── .gitignore # Files and folders to ignore in Git
+└── README.md # Project documentation
 
 **###How it Works**
+
 Frontend React app calls backend API using Axios.
 
 Backend API fetches/stores data in MongoDB using Mongoose.
@@ -128,6 +135,7 @@ When a student with a Codeforces handle is added or updated, backend fetches lat
 Data is displayed in a table with options to view, delete, and download as CSV.
 
 **Troubleshooting**
+
 Make sure MongoDB is running and accessible.
 
 Check .env file for correct MONGO_URI and port.
